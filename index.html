@@ -1,0 +1,452 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css_lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/mobile.css">
+</head>
+<body ng-app="app" ng-controller="app_control" ng-class="{'active-flow':menu_status}">
+    <header>
+        <div class="container">
+            <div class="center-items-header">
+                <img src="./images/logo.svg" class="logo" alt="">
+                <div class="bars-box" ng-class="{'active':menu_status}" ng-click="toggleMenu()"> 
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav ng-class="{'active': menu_status}">
+                    <div class="logo-box-mobile">
+                        <img src="./images/logo.svg" alt="">
+                        <img  class="close-img" src="./images/close-img.png" alt="" ng-click="toggleMenu()">
+                    </div>
+                    <ul>
+                        <li><a href="#" class="active">About us</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+                <button class="btn-order">
+                    Order now
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="bottom-header-slider">
+        <div class="container">
+            <div class="container-slider">
+               
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 one-col">
+                                    <div class="padding-box">
+                                        <p class="title-slider-text">
+                                            Banner Design & Graphic Design Services for Performance Marketers
+                                        </p>
+                                        <p class="short-text">Super Affiliates use our services to increase their profits</p>
+                                        <p class="mission-texts">
+                                            <span>• High Quality In Affordable Prices</span>
+                                            <span>• 100% Money-back Guarantee </span>
+                                            <span>• 24 Hrs Turnaround time</span>
+                                            <span>• 100% Custom Design</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 two-col">
+                                    <div class="padding-box">
+                                        <div class="wallpaper-header-slider-box">
+                                            <div class="slider-box-header">
+                                                <ul>
+                                                    <li>
+                                                        <img src="./images/angular-wal-2.png" class="wallpaper-header-slider" alt="">
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/angular-wal-3.jpg" class="wallpaper-header-slider" alt="">
+                                                    </li>
+                                                    <li>
+                                                        <img src="./images/angular-wal-1.jpg" class="wallpaper-header-slider" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="bottom-square-slider-control">
+                                            <div class="item-square" ng-click="sliderPayload(index)" ng-class="{'active': index == countControlSlider}"  ng-repeat="(index, item) in slider_item_length_arr"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+            </div>
+        </div>
+       
+    </section>
+
+
+    <section class="white-colums">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="banner-box">
+                        <img src="./images/bg-nature.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="text-box">
+                        <p class="text-box-title">
+                            We design banners <br>
+                            that make You money!
+                        </p>
+                        <p class="text-box-about">
+                            You don't have to pay thousands of dollars to get banners 
+                            that will bring you great profits. Our designs are based 
+                            on get clicks years of experience in performance marketing and 
+                            get clicks. Our services are used by super affiliates world wide  
+                            who need a reliable partner for their ad creatives. 
+                        </p>
+                        <button class="blue-btn">
+                            See our work
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pink-chapters">
+        <div class="container">
+            <p class="title-chapers">Why choose Trafbanners?</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="flex-chapters">
+                        <div class="box-chapters">
+                            <div class="chapter-img-box">
+                                <img src="./images/logo-layer-1.svg" alt="" class="logo-chapters">
+                            </div>
+                            <p class="chapter-in-title">Value</p>
+                            <p class="chapter-in-about">We provide banners for $10 making  our services affordable for anyone.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="flex-chapters">
+                        <div class="box-chapters">
+                            <div class="chapter-img-box">
+                                <img src="./images/logo-layer-2.svg" alt="" class="logo-chapters">
+                            </div>
+                            <p class="chapter-in-title">100% satisfaction</p>
+                            <p class="chapter-in-about">
+                                If you are not happy with the results of your banner design, then you don’t pay!  
+                                It’s that simple. You are therefore guaranteed 100% satisfaction!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="flex-chapters">
+                        <div class="box-chapters">
+                            <div class="chapter-img-box">
+                                <img src="./images/logo-layer-3.svg" alt="" class="logo-chapters">
+                            </div>
+                            <p class="chapter-in-title">We’re fast. We’re VERY Fast!</p>
+                            <p class="chapter-in-about">
+                                All orders are completed in hours or days, depending on your need for speed. Order now how it works
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="center-buttons buttons-chapters">
+                        <button class="blue-btn">Order now</button>
+                        <button class="white-btn">How it work >></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="white-colums two">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="banner-box-two">
+                        <img src="./images/mern-mean.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="text-box">
+                        <p class="text-box-title">
+                            We know we are the best and you’ll agree to it as well. 
+                            Have a look at our work before giving us your verdict
+                        </p>
+                        <p class="text-box-about">
+                            We at Trafbanners design beautiful STATIC, GIF and HTML5/Rich Media/Responsive banners for Adwords, Google Marketing Platform, Facebook, or custom made or your advertisement needs.
+                        </p>
+                        <button class="blue-btn">
+                            View our work
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="price-chapters">
+        <div class="container">
+            <p class="center-price-title">Simple Pricing</p>
+            <p class="center-price-bottom">Our rates are simple - $10 for banners of any size, animated or static.</p>
+            <div class="center-price-box-flex">
+                <div class="box-price">
+                    <a href="#">
+                        <div class="center-price-item">
+                            <p class="title-price">
+                                1 Banner
+                            </p>
+                            <p class="price-count">
+                                10 USD
+                            </p>
+                            <p class="price-bottom">Cost per banner</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box-price">
+                    <a href="#">
+                        <div class="center-price-item">
+                            <p class="title-price">
+                                10 Banner
+                            </p>
+                            <p class="price-count">
+                                75 USD
+                            </p>
+                            <p class="price-bottom">Cost per banner</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box-price">
+                    <a href="#">
+                        <div class="center-price-item">
+                            <p class="title-price">
+                                20 Banner
+                            </p>
+                            <p class="price-count">
+                                100 USD
+                            </p>
+                            <p class="price-bottom">Cost per banner</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <p class="text-center-rec">
+                Recommended for
+            </p>
+            <p class="orange-price">
+                Startups / Testing / Blogs / Affiliate marketing
+            </p>
+            <p class="about-dark">
+                We understand that internet marketing can be a complex process that is why we are here to work with you <span></span>
+                no matter if you need 100s of banner variations; or dozens of landers for your A/B testing and multivariate <span></span>
+                tests.  Email us and tell us what you need and we will have a price quote to you right away.
+            </p>
+            <div class="text-center">
+                <button class="blue-btn">
+                    Order now
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="how-site">
+        <div class="container">
+            <p class="center-how-site-title">How Trafbanners Works</p>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="padding-box">
+                        <div class="flex-components">
+                            <div class="flex-components-item">
+                                <p class="title-fci">
+                                    01. Complete our order form
+                                </p>
+                                <p class="about-fci">
+                                    Share your design files including logos, font size requirements, references, 
+                                    etc. with our team to help us develop more perfectly as the way you want it.
+                                </p>
+                            </div>
+                            <div class="flex-components-item">
+                                <p class="title-fci">
+                                    02. View design
+                                </p>
+                                <p class="about-fci">
+                                    After receiving the details of the project, our designers brainstorm over the idea.
+                                    Within 48 hours (possibly sooner!) you'll receive an email notification with a link
+                                    to your completed creative. If you don't like the result you can download it, 
+                                    if you don't, then you can simply enter your modifications into the revision box.
+                                </p>
+                            </div>
+                            <div class="flex-components-item">
+                                <p class="title-fci">
+                                    03. Buy when delighted
+                                </p>
+                                <p class="about-fci">
+                                    You pay only when you are entirely happy with your design.
+                                </p>
+                            </div>
+                            <button class="blue-btn">Frequently asked questions >></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="flex-box-center">
+                        <div class="how-site-image-box">
+                            <img src="./images/nvidia.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-us">
+        <div class="container">
+            <p class="about-us-title">
+                What customer say about us
+            </p>
+            <p class="about-us-texts">
+                Our customers love us. Customer satisfaction and consistent, quality design is what keeps them coming back  again and again. For over 10 years, we have designed and developed some amazing marketing and product creative for thousands of diverse clients. 
+            </p>
+            <div class="about-slider-box">
+                <div class="parent-about-slider">
+                    <div class="icon-parent-slider">
+                        <img src="./images/left-circle.png" alt="" class="left-circle" ng-click="prevAboutSlider()"> 
+                        <img src="./images/right-circle.png" alt="" class="right-circle" ng-click="nextAboutSlider()">
+                    </div>
+                    <div class="slider-parent about-parent-slider">
+                        <ul>
+                            <li>
+                               <p class="slider-us-title">Jernej D.</p> 
+                               <p class="slider-us-title-bottom">Managing director, Trainer, Financial consultant </p> 
+                               <p class="slider-us-about">
+                                    Great design tool for small entrepreneurs to create eye-catching visuals. Professional templates <span></span>
+                                    for every business. I really like their animated designs and what is most important <span></span>
+                                    it is easy to use.
+                               </p> 
+                            </li>
+                            <li>
+                                <p class="slider-us-title">Rəşad Yusifov.</p> 
+                                <p class="slider-us-title-bottom">Lorem ipsum dolor sit amet.</p> 
+                                <p class="slider-us-about">
+                                    Great design tool for small entrepreneurs to create eye-catching visuals. Professional templates <span></span>
+                                    for every business. I really like their animated designs and what is most important <span></span>
+                                    it is easy to use.
+                               </p> 
+                             </li>
+                             <li>
+                                <p class="slider-us-title">XXX Character.</p> 
+                                <p class="slider-us-title-bottom">Lorem ipsum dolor sit amet. XXX</p> 
+                                <p class="slider-us-about">
+                                    Great design tool for small entrepreneurs to create eye-catching visuals. Professional templates <span></span>
+                                    for every business. I really like their animated designs and what is most important <span></span>
+                                    it is easy to use.
+                               </p> 
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="square-slider-control">
+                <div class="square-item" ng-click="aboutSliderChange(index)" ng-class="{'active': index == aboutSliderCount}" ng-repeat="(item, index) in aboutSliderLength"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pink-bottom">
+        <div class="container">
+            <div class="flex-center-pink">
+                <div class="center-pink-item">
+                    <div class="list-item">
+                        <div class="item"><p>• High Quality In Affordable Prices</p></div>
+                        <div class="item"><p>• 24 Hrs Turnaround time</p></div>
+                    </div>
+                    <div class="list-item">
+                        <div class="item"><p>• 100% Money-back Guarantee </p></div>
+                        <div class="item"><p>• 100% Custom Design</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">                
+                <img src="./images/footer-logo.svg" alt="">
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <ul class="media-ul">
+                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                    </ul>
+                    <ul class="menu-ul">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Prackages</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 middle-item-footer">
+                    <p class="title-menu-footer">SOCIAL MEDIA</p>
+                    <ul class="menu-ul">
+                        <li><a href="#">Social Media Designs</a></li>
+                        <li><a href="#">Facebook Ads</a></li>
+                        <li><a href="#">Facebook cover & Post</a></li>
+                        <li><a href="#">Youtube Banner</a></li>
+                        <li><a href="#">Instagram Post</a></li>
+                        <li><a href="#">Twitter Graphics</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 last-item-footer">
+                    <p class="title-menu-footer">BANNERS</p>
+                    <ul class="menu-ul">
+                        <li><a href="#">Animated Banners</a></li>
+                        <li><a href="#">Banner Examples</a></li>
+                        <li><a href="#">HTML5 Banners</a></li>
+                        <li><a href="#">GIF Banners</a></li>
+                        <li><a href="#">Mobile Banners</a></li>
+                        <li><a href="#">Email GIF Banners</a></li>
+                        <li><a href="#">AMP Banners</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy-text">
+                <p>© 2020 Bannersnack. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<!-- libs  -->
+<script src="./lib/angular.module.js"></script>
+<script src="./javascript/main.module.js"></script>
+
+<!-- </> libs  -->
+
+</html>

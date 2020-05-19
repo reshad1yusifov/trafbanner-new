@@ -1,0 +1,244 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css_lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/mobile.css">
+</head>
+<body ng-app="app" ng-controller="app_control" ng-class="{'active-flow':menu_status}">
+    <header class="light">
+        <div class="container">
+            <div class="center-items-header">
+                <div class="light-flex-icon">
+                    <img src="./images/merge logo-one.svg" alt="">
+                    <img src="./images/merge-logo-two.svg" alt="">
+                    <img src="./images/merge-logo-three.svg" alt="">
+                </div>
+                <div class="bars-box" ng-class="{'active':menu_status}" ng-click="toggleMenu()"> 
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav ng-class="{'active': menu_status}">
+                    <div class="logo-box-mobile">
+                        <img src="./images/logo.svg" alt="">
+                        <img  class="close-img" src="./images/close-img.png" alt="" ng-click="toggleMenu()">
+                    </div>
+                    <ul>
+                        <li><a href="#" class="active">About us</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+                <button class="btn-order">
+                    Order now
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="contact-section">
+        <div class="container">
+            <p class="title-contact">Contact us</p>
+            <p class="half-contact-text">Have questions? We are online right now!</p>
+            <p class="about-contact-text">
+                We are open to your queries and suggestions. <span></span>
+                Contact us by filling the form and we will get back to You in a few minutes!
+            </p>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <div class="blue-contact-box">
+                        <div class="flex-cs-input">
+                            <div class="item">
+                                <div class="box-custom-input" ng-click="blurThisInput($event)">
+                                    <div class="label-inp"><span>Your name*</span></div>
+                                    <input type="text" value="Rəşad Yusifov">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box-custom-input" ng-click="blurThisInput($event)">
+                                    <div class="label-inp"><span>Your email adress*</span></div>
+                                    <input type="text" value="resad@gmail.com">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="box-custom-input custom-height-box-input" ng-click="blurThisArea($event)">
+                            <div class="label-inp"><span>Message*</span></div>
+                            <textarea >Lorem ipsum dolor sit ameet</textarea>
+                        </div>
+                    </div>
+                    <div class="send-box">
+                        <span>Send now</span>
+                    </div>
+                    <div class="about-send-bottom">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="flex-about-bottom one">
+                                    <p class="text-break">100% Money-back Guarantee</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="flex-about-bottom two">
+                                    <p class="text-break">24 Hrs Turnaround time</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="flex-about-bottom three">
+                                    <p class="text-break">100% Custom Design</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-xs-12 padding-md-clear">
+                    <div class="parent-col-contacts">
+                        <div class="col-contact">
+                            <div>
+                                <p class="title">Contact</p>
+                                <p class="number">WhatsApp:  +1-800-700-6200</p>
+                                <p class="number">Skype:  trafbanners</p>
+                            </div>
+                        </div>
+                        <div class="col-contact">
+                            <div>
+                                <p class="title">Contact</p>
+                                <p class="number">WhatsApp:  +1-800-700-6200</p>
+                                <p class="number">Skype:  trafbanners</p>
+                            </div>
+                        </div>
+                        <div class="col-contact">
+                            <div>
+                                <p class="title">Contact</p>
+                                <p class="number">WhatsApp:  +1-800-700-6200</p>
+                                <p class="number">Skype:  trafbanners</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="abouts-box">
+                <p class="title-contact">Frequently asked questions</p>
+                 <div class="dynamic-window-box">
+
+                     <div class="dynamic-window-item" >
+                        <div class="dynamic-window-item-head" ng-click="toggleDynamicWindow($event)">
+                            <p class="title">Contact us by filling the form and we will get back to You in a few minutes ?</p>
+                            <div class="absolute-icon-head">
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <div class="dynamic-window-content">
+                             <p class="title">
+                                You don't have to pay thousands of dollars to get banners  that will bring you great profits. Our designs are based  on get clicks years of experience in performance marketing and get clicks. Our services are used by super affiliates world wide who need a reliable partner for their ad creatives. Our services are used by super affiliates world wide who need a reliable partner for their ad creatives. 
+                             </p>
+                        </div>
+                     </div>
+                     <div class="dynamic-window-item" >
+                        <div class="dynamic-window-item-head" ng-click="toggleDynamicWindow($event)">
+                            <p class="title">Contact us by filling the form and we will get back to You in a few minutes ?</p>
+                            <div class="absolute-icon-head">
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <div class="dynamic-window-content">
+                             <p class="title">
+                                You don't have to pay thousands of dollars to get banners  that will bring you great profits. Our designs are based  on get clicks years of experience in performance marketing and get clicks. Our services are used by super affiliates world wide who need a reliable partner for their ad creatives. Our services are used by super affiliates world wide who need a reliable partner for their ad creatives. 
+                             </p>
+                        </div>
+                     </div>
+                     <div class="dynamic-window-item" >
+                        <div class="dynamic-window-item-head" ng-click="toggleDynamicWindow($event)">
+                            <p class="title">Contact us by filling the form and we will get back to You in a few minutes ?</p>
+                            <div class="absolute-icon-head">
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <div class="dynamic-window-content">
+                             <p class="title">
+                                You don't have to pay thousands of dollars to get banners  that will bring you great profits. Our designs are based  on get clicks years of experience in performance marketing and get clicks. Our services are used by super affiliates world wide who need a reliable partner for their ad creatives. Our services are used by super affiliates world wide who need a reliable partner for their ad creatives. 
+                             </p>
+                        </div>
+                     </div>
+
+                    
+
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+   
+
+    
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="./images/footer-logo.svg" alt="">
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <ul class="media-ul">
+                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                    </ul>
+                    <ul class="menu-ul">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Prackages</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 middle-item-footer">
+                    <p class="title-menu-footer">SOCIAL MEDIA</p>
+                    <ul class="menu-ul">
+                        <li><a href="#">Social Media Designs</a></li>
+                        <li><a href="#">Facebook Ads</a></li>
+                        <li><a href="#">Facebook cover & Post</a></li>
+                        <li><a href="#">Youtube Banner</a></li>
+                        <li><a href="#">Instagram Post</a></li>
+                        <li><a href="#">Twitter Graphics</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 last-item-footer">
+                    <p class="title-menu-footer">BANNERS</p>
+                    <ul class="menu-ul">
+                        <li><a href="#">Animated Banners</a></li>
+                        <li><a href="#">Banner Examples</a></li>
+                        <li><a href="#">HTML5 Banners</a></li>
+                        <li><a href="#">GIF Banners</a></li>
+                        <li><a href="#">Mobile Banners</a></li>
+                        <li><a href="#">Email GIF Banners</a></li>
+                        <li><a href="#">AMP Banners</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy-text">
+                <p>© 2020 Bannersnack. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<!-- libs  -->
+<script src="./lib/angular.module.js"></script>
+<script src="./javascript/main.module.js"></script>
+
+<!-- </> libs  -->
+
+</html>
